@@ -12,6 +12,10 @@ app.get('/login', async (req, res) => {
     res.send('<h1>Login Page</h1>')
 })
 
+app.get('/arc-sw.js', async (req, res) => {
+    res.sendFile(`${process.cwd()}/views/arc-sw.js`)
+})
+
 // Listening to PORT
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
