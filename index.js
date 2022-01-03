@@ -8,6 +8,10 @@ app.get('/', async (req, res) => {
     res.render('home.ejs')
 })
 
+app.get('/login', async (req, res) => {
+    res.send('<h1>Login Page</h1>')
+})
+
 // Listening to PORT
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
