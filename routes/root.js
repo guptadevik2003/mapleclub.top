@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     res.render('home.ejs')
 })
 router.get('/home', async (req, res) => {
-    res.render('home.ejs')
+    res.redirect('/')
 })
 
 module.exports = router
