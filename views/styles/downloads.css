@@ -2,8 +2,29 @@
 
 :root{
     --arc-io-purple: #7b4dff;
+    --backg-color: #090a0c;
+    --text-green: #22c55e;
+    --text-grey: #63707f;
+    --button-green: #1eb154;
+    --button-grey: #12151b;
 }
 
 *{
     font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--backg-color) !important;
+}
+
+body a{
+    margin: 10px;
+    font-size: 16px;
+    color: var(--text-green);
+    text-decoration: none;
 }
