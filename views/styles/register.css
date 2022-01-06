@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --arc-io-purple: #7b4dff;
+
+    --fill-darkest: rgb(23, 24, 30);
+    --fill-dark: rgb(31, 33, 41);
+    --fill-light: rgb(39, 41, 52);
+
+    --text-light: rgb(242, 244, 251);
+    --text-dark: rgb(155, 157, 159);
+    --text-high: crimson;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--fill-dark) !important;
+}
+
+/* Hero Section */
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero_section .register_container{
+    background: var(--fill-light);
+    background-image: url(/assets/loginRegister.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 350%;
+    /* border-radius: 7px; */
+    height: 500px;
+    width: 400px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero_section .register_container .form_container{
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero_section .register_container .heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero_section .register_container #errorText{
+    color: var(--text-high);
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.hero_section .register_container input{
+    width: 100%;
+    padding: 12px;
+    background: var(--fill-darkest);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.hero_section .register_container input::placeholder{
+    color: var(--text-dark);
+}
+
+.hero_section .register_container .registerBtn{
+    margin-top: 20px;
+    background: var(--text-high);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    max-width: 110px;
+    transition: 0.5s;
+}
+.hero_section .register_container .registerBtn:hover{
+    color: var(--text-high);
+    background: white;
+}
+
+.hero_section .register_container .loginLink{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.hero_section .register_container .loginLink a{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-high);
+}
+
+
+
+/* ============ Media Queries Starts From This Part Now ============ */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    .hero_section{
+        min-height: 90vh;
+    }
+}

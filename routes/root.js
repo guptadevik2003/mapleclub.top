@@ -14,4 +14,19 @@ router.get('/home', async (req, res) => {
     res.redirect('/')
 })
 
+router.get('/login', isNotAuth, async (req, res) => {
+    res.render('login.ejs')
+})
+router.get('/register', isNotAuth, async (req, res) => {
+    res.render('register.ejs')
+})
+
+router.get('/dashboard', isAuth, async (req, res) => {
+    res.send('<h1>Welcome to dashboard</h1>')
+})
+
+router.get('/dev/dashboard', isAuth, isDev, async (req, res) => {
+    res.send('<h1>Welcome to Developer dashboard</h1>')
+})
+
 module.exports = router
