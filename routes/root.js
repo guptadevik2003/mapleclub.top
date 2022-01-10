@@ -29,8 +29,4 @@ router.get('/dev/dashboard', isAuth, isDev, async (req, res) => {
     res.send('<h1>Welcome to Developer dashboard</h1>')
 })
 
-router.get('/dev/secret/phb', isAuth, async (req, res) => {
-    res.render('phb.ejs')
-})
-
 module.exports = router
